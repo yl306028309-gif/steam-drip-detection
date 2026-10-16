@@ -1,6 +1,6 @@
 # 模型清单与下载
 
-本次随 [Release v1.0.0](https://github.com/a0905352668-source/steam-drip-detection/releases/tag/v1.0.0) 上传 11 个原始模型文件，总计 328,088,662 字节（约 313 MiB）。所有模型保持原始字节，未重新训练或改写权重。
+本次随 [Release v1.0.0](https://github.com/yl306028309-gif/steam-drip-detection/releases/tag/v1.0.0) 上传 11 个原始模型文件，总计 328,088,662 字节（约 313 MiB）。所有模型保持原始字节，未重新训练或改写权重。
 
 ## 下载
 

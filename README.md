@@ -24,7 +24,7 @@ docs/                  环境、部署、来源和验证记录
 requirements.txt       共享 Python 依赖
 ```
 
-模型二进制放在 [GitHub Release v1.0.0](https://github.com/a0905352668-source/steam-drip-detection/releases/tag/v1.0.0)，不写入 Git 历史。只下载仓库 ZIP 不包含模型；下载工具会把模型恢复到脚本所需的位置。
+模型二进制放在 [GitHub Release v1.0.0](https://github.com/yl306028309-gif/steam-drip-detection/releases/tag/v1.0.0)，不写入 Git 历史。只下载仓库 ZIP 不包含模型；下载工具会把模型恢复到脚本所需的位置。
 
 ## 1. 获取代码和模型
 
@@ -32,7 +32,7 @@ requirements.txt       共享 Python 依赖
 
 ```bash
 gh auth login
-gh repo clone a0905352668-source/steam-drip-detection
+gh repo clone yl306028309-gif/steam-drip-detection
 cd steam-drip-detection
 python3 scripts/download_models.py
 # 需要历史权重时：
@@ -126,3 +126,7 @@ python scripts/smoke_test.py --device cpu
 该命令生成合成视频，检查两条预处理流程及当前 PyTorch／已有 ONNX 模型能否产生有效概率。它不衡量实际水蒸气或滴水识别准确率。
 
 训练集、现场视频、凭据和每个 epoch 的全部中间模型不在本仓库和 Release 中。未附加开源授权；如需对外公开或分发，请由项目权利人确定授权范围。
+
+## 实时料袋检漏试验分支
+
+实时改造代码保存在 [codex/realtime-regions 分支](https://github.com/yl306028309-gif/steam-drip-detection/tree/codex/realtime-regions)，包含海康 MVS 适配和检测周期信号处理。[查看实时使用说明](https://github.com/yl306028309-gif/steam-drip-detection/blob/codex/realtime-regions/docs/REALTIME_PACKING.md)。该部分尚未验证现场烟雾检出率，基础归档版仍保留在 main。
